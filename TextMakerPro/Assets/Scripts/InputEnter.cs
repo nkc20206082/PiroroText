@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InputEnter : MonoBehaviour
 {
-    [SerializeField] TextMakeModel _TextMakeModel;
+    [SerializeField] TextPool _TextPool;
     private bool _enterInterval = false;
 
     // Update is called once per frame
@@ -11,14 +11,15 @@ public class InputEnter : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return)&&!_enterInterval)
         {
-            _TextMakeModel.AddNum();
+            _TextPool.Attack();
             StartCoroutine("EnterInterval");
         }
     }
     IEnumerator EnterInterval()
     {
+        const float INTERVAL = 0.2f;
         _enterInterval = true;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(INTERVAL);
         _enterInterval = false;
     }
 }

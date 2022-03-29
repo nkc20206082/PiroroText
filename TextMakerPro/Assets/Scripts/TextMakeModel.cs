@@ -3,11 +3,10 @@ using UnityEngine;
 
 public class TextMakeModel : MonoBehaviour
 {
-    private const int _addNum = 100;
-    public event Action<int> AddEvent;
+    public event Action<int> SetEvent;
 
-    public void AddNum()
+    public void SetNum(int _SetNum)
     {
-        AddEvent(_addNum);
+        SetEvent(_SetNum);
     }
 }

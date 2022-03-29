@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 6157398478727394473}
   - component: {fileID: 7511176608617986731}
   - component: {fileID: 6157398478727394479}
+  - component: {fileID: 1433407542327533371}
+  - component: {fileID: 7512081313551184974}
+  - component: {fileID: 6494618787336436888}
   m_Layer: 0
   m_Name: NumText
   m_TagString: Untagged
@@ -99,7 +102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +100
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -183,3 +186,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afc77073d1fe82540b3e132909962180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1433407542327533371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6157398478727394478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e152ee3243472344b876f6af7bfdab51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7512081313551184974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6157398478727394478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eba4fcdcaa30a14f91786c3da8e626c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TextMakeModel: {fileID: 1433407542327533371}
+  _TextMakeView: {fileID: 6494618787336436888}
+--- !u!114 &6494618787336436888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6157398478727394478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a923bb314b91c5d439d63ac643e19897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageTextObj: {fileID: 6157398478727394478}

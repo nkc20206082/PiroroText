@@ -5,8 +5,8 @@ public class TextMakePresenter : MonoBehaviour
     [SerializeField] private TextMakeModel _TextMakeModel;
     [SerializeField] private TextMakeView _TextMakeView;
 
-    public void Awake()
+    private void Awake()
     {
-        _TextMakeModel.AddEvent += _TextMakeView.Attack;
+        _TextMakeModel.SetEvent += _TextMakeView.InstantiatedObj;
     }
 }

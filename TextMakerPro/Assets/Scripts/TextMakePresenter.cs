@@ -7,6 +7,6 @@ public class TextMakePresenter : MonoBehaviour
 
     private void Awake()
     {
-        _TextMakeModel.SetEvent += _TextMakeView.InstantiatedObj;
+        _TextMakeModel.SetEvent += _TextMakeView.SetText;
     }
 }

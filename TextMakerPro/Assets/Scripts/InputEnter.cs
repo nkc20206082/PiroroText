@@ -11,7 +11,7 @@ public class InputEnter : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return)&&!_enterInterval)
         {
-            _TextPool.Attack();
+            _TextPool.MakeTextObj();
             StartCoroutine("EnterInterval");
         }
     }

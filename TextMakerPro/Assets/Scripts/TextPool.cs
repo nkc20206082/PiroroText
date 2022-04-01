@@ -6,7 +6,7 @@ public class TextPool : MonoBehaviour
     [SerializeField] private GameObject _damageTextObj; //ダーメージテキストを格納
     private GameObject _getTextObj;
 
-    public void Attack()
+    public void MakeTextObj()
     {
         GameObject nonActiveTextObj = null;
 
